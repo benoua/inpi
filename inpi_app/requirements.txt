@@ -1,0 +1,13 @@
+# Requirements for Jupyter Notebooks
+oauth2client
+xlrd
+openpyxl
+pandas
+xmltodict
+tqdm
+unidecode
+gcsfs
+gcloud
+fastparquet
+pyarrow
+google-cloud-storage
