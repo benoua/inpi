@@ -70,7 +70,7 @@ def compute_cairn_metrics(df):
     return df
 
 def extract_comptes_sociaux_from_file(file):
-    mapping = pd.read_excel(os.path.join(os.environ["CAIRN_DIR"], "utils", "inpi_helpers", "liasses_mapping.xlsx"))
+    mapping = pd.read_excel("liasses_mapping.xlsx")
     mapping = mapping[["key", "col_number", "starting_from"]]
     try:
         bilan_def = pd.Series(file["bilans"]["bilan"]["identite"])
